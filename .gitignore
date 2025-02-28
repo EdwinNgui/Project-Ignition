@@ -1,0 +1,33 @@
+# Node.js dependencies (React, Vue, Angular)
+frontend/react/node_modules/
+frontend/vue/node_modules/
+frontend/angular/node_modules/
+
+# Private backend
+\backend
+
+# Python dependencies
+backend/venv/
+backend/__pycache__
+
+# Environment variables
+frontend/.env
+backend/.env
+
+# Log files
+*.log
+
+# Build output
+frontend/react/build/
+frontend/vue/dist/
+frontend/angular/dist/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# System files (Mac-specific)
+.DS_Store
+
+# Docker configuration files (if you're using Docker)
+.dockerignore
