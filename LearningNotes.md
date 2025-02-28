@@ -30,5 +30,4 @@
 
 - When asked about App Router, if declined will lead to pages
 - Pages are structured by having the page itself, layouts that that mold the shape of the page and components which are smaller pieces. The pages are routed through their name
-- App Router instead has an /app folder which houses the layout + index, and each subdirectory page is housed in a corresponding folder with its name
-- components are in their own folder too within app router
+- App Router instead has an /app folder which houses the layout + index, and each subdirectory page is housed in a corresponding folder with its name while components are in their own folder too within app router
