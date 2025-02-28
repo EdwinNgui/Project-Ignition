@@ -31,3 +31,6 @@ frontend/angular/dist/
 
 # Docker configuration files (if you're using Docker)
 .dockerignore
+
+# Notes
+NextSteps.md

@@ -1,6 +1,6 @@
 ### Diataxis Model: For naming documentation
 
-### **Types** (the category):
+## **Types** (the category):
 
 - **`feat`**: A new feature or functionality added.
 - **`fix`**: A bug fix or issue resolved.
@@ -14,7 +14,7 @@
 - **`build`**: Changes that affect the build process or external dependencies.
 - **`revert`**: Reverts a previous commit.
 
-### **Scopes** (what part):
+## **Scopes** (what part):
 
 - **`auth`**: Authentication-related changes.
 - **`ui`**: User interface-related changes.
@@ -25,3 +25,10 @@
 - **`tests`**: Modifications to test files or test configurations.
 - **`config`**: Changes to configurations (e.g., webpack, environment settings).
 - **`utils`**: Utility functions or helpers.
+
+### Next.JS Setup
+
+- When asked about App Router, if declined will lead to pages
+- Pages are structured by having the page itself, layouts that that mold the shape of the page and components which are smaller pieces. The pages are routed through their name
+- App Router instead has an /app folder which houses the layout + index, and each subdirectory page is housed in a corresponding folder with its name
+- components are in their own folder too within app router
