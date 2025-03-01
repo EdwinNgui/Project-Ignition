@@ -1,11 +1,15 @@
 // src/components/DashboardLayout/DashboardLayout.tsx
-import Sidebar from '../components/Sidebar/Sidebar'
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/app-sidebar";
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex h-screen">
-      <Sidebar />
-      <div className="flex-1 p-8">{children}</div> {/* Dashboard content will be rendered here */}
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        {children}
+      </main>
+    </SidebarProvider>
   )
 }
