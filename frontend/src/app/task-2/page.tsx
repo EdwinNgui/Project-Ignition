@@ -2,9 +2,8 @@
 export default function DashboardPage() {
     return (
       <div className="p-8">
-        <h1 className="text-2xl font-bold">Welcome to the Dashboard</h1>
-        <p>This is the dashboard page content</p>
-
+        <h1 className="text-2xl font-bold">Task 2</h1>
+        
       </div>
     )
   }

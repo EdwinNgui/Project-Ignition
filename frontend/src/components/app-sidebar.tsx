@@ -21,23 +21,51 @@ const items = [
       icon: Home,
     },
     {
-      title: "Inbox",
-      url: "/",
+      title: "Dashboard Check (Inbox)",
+      url: "/dashboard",
       icon: Inbox,
     },
     {
       title: "Calendar",
-      url: "/",
+      url: "/dashboard",
       icon: Calendar,
     },
     {
       title: "Search",
-      url: "/",
+      url: "/dashboard",
       icon: Search,
     },
     {
       title: "Settings",
-      url: "/",
+      url: "/dashboard",
+      icon: Settings,
+    },
+  ]
+
+  const taskItems = [
+    {
+      title: "Task 1",
+      url: "/task-1",
+      icon: Home,
+    },
+    {
+      title: "Task 2",
+      url: "/task-2",
+      icon: Inbox,
+    },
+    {
+      title: "Task 3",
+      url: "/task-3",
+      icon: Calendar,
+    },
+    {
+      title: "Task 4",
+      url: "/task-4",
+      icon: Search,
+    },
+    {
+      title: "Task 5",
+      url: "/task-5",
       icon: Settings,
     },
   ]
@@ -52,6 +80,26 @@ const items = [
                 <SidebarGroupContent>
                     <SidebarMenu>
                         {items.map((item) => (
+                            <SidebarMenuItem key={item.title}>
+                                <SidebarMenuButton asChild>
+                                    <a href={item.url}>
+                                        <item.icon />
+                                        <span>{item.title}</span>
+                                    </a>
+                                </SidebarMenuButton>
+                            </SidebarMenuItem>
+                        )
+                        )}
+                    </SidebarMenu>
+                </SidebarGroupContent>
+            </SidebarGroup>
+            <SidebarGroup />
+
+            <SidebarGroup>
+                <SidebarGroupLabel>Tasks</SidebarGroupLabel>
+                <SidebarGroupContent>
+                    <SidebarMenu>
+                        {taskItems.map((item) => (
                             <SidebarMenuItem key={item.title}>
                                 <SidebarMenuButton asChild>
                                     <a href={item.url}>
