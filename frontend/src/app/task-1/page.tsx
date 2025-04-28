@@ -3,6 +3,7 @@
 
 import React from 'react';
 import Counter from "@/components/task1/task1-counter";
+import Stopwatch from "@/components/task1/task1-stopwatch";
 
 export default function DashboardPage() {
     return (
@@ -17,6 +18,8 @@ export default function DashboardPage() {
         <Counter />
 
         <li>Stopwatch</li>
+        <Stopwatch/>
+
         <li>Like Button</li>
         <li>Star Rating</li>
         <li>Tabs</li>
