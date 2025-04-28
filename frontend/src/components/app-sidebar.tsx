@@ -44,22 +44,22 @@ const items = [
 
   const taskItems = [
     {
-      title: "Task 1",
+      title: "Task 1 - Easy",
       url: "/task-1",
       icon: Home,
     },
     {
-      title: "Task 2",
+      title: "Task 2 - Medium",
       url: "/task-2",
       icon: Inbox,
     },
     {
-      title: "Task 3",
+      title: "Task 3 - Hard",
       url: "/task-3",
       icon: Calendar,
     },
     {
-      title: "Task 4",
+      title: "Task 4 - Typescript Refresher",
       url: "/task-4",
       icon: Search,
     },
