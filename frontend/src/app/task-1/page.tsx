@@ -4,6 +4,7 @@
 import React from 'react';
 import Counter from "@/components/task1/task1-counter";
 import Stopwatch from "@/components/task1/task1-stopwatch";
+import Tabs from "@/components/task1/task1-tabs";
 
 export default function DashboardPage() {
     return (
@@ -20,9 +21,12 @@ export default function DashboardPage() {
         <li>Stopwatch</li>
         <Stopwatch/>
 
-        <li>Like Button</li>
-        <li>Star Rating</li>
-        <li>Tabs</li>
+        <li className='line-through'>Like Button</li>
+        <li className='line-through'>Star Rating</li>
+        
+        <li>Tabs (using MUI)</li>
+        <Tabs />
+
         <li>Accordion</li>
         <li>Traffic Lights</li>
         <li>Progress Bars</li>
